@@ -1,0 +1,139 @@
+.todo__header {
+	display: flex;
+	width: 100%;
+
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 20px 10px 0px;
+}
+.todo__item-icon {
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+	background-image: url();
+}
+.todo__daily-list,
+.todo__weekly-list {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: auto;
+	height: 70px;
+}
+.todo__item {
+	display: flex;
+	width: 60px;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+}
+.todo__item-name {
+	max-width: 50px;
+	font-size: 12px;
+}
+.todo__weekly-list {
+	display: flex;
+	flex-direction: row;
+}
+/* The container */
+.container-checkbox {
+	display: flex;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-left: 9px;
+	width: 60px;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+	background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container-checkbox .checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+	left: 10px;
+	top: 7px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.todo__space {
+	display: flex;
+	width: 200px;
+	justify-content: center;
+}
+.todo__char {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-bottom: 2px solid #232735;
+}
+.todo__char-info {
+	display: flex;
+	width: 200px;
+	padding: 10px 30px 10px 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+.todo__char-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+.todo__char-check {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.todo__char-more {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
