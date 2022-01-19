@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import popupSlicer from './popupSlicer';
 import tableSlicer from './tableSlicer';
 export const store = configureStore({
 	reducer: {
 		table: tableSlicer,
+		popup: popupSlicer,
 	},
 });
 

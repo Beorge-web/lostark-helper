@@ -1,15 +1,13 @@
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: $main-bc;
+	font-family: Futura PT;
+	font-weight: 500;
 }
 
-body {
-	background-color: $main-bc;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 textarea:focus,
 input:focus {
 	outline: none;

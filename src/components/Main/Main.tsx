@@ -6,7 +6,7 @@ import TableForm from '../TableForm/TableForm';
 const Main: React.FC = () => {
 	return (
 		<>
-			<TableForm />
+			{/* <TableForm /> */}
 			<DailyTable />
 			<Popup />
 			<PopupButton />

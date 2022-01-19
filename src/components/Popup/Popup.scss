@@ -31,18 +31,18 @@ h1 {
 }
 
 .popup__overlay {
+	display: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 500ms;
-	visibility: hidden;
 	opacity: 0;
 }
-.popup__overlay:target {
-	visibility: visible;
+.popup__overlay_active {
+	display: block;
+	transition: opacity 500ms;
 	opacity: 1;
 }
 
@@ -64,51 +64,70 @@ h1 {
 		background-color: $dark-gr;
 		border-radius: 4px;
 		border: 2px solid $black;
+		&:disabled {
+			background-color: gray;
+			color: $black;
+		}
+	}
+	&__close {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		transition: all 200ms;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: $green;
+		background-color: transparent;
+		border: none;
+		height: 40px;
+		width: 40px;
+		padding: 0;
+		&:hover {
+			color: $black;
+			cursor: pointer;
+		}
+	}
+	&__field {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	&__input {
+		background-color: #65b890;
+		border: 2px solid $black;
+		padding: 4px 8px;
+		border-radius: 4px;
+	}
+	&__input-container {
+		border: 2px solid $black;
+		border-radius: 4px;
+		color: $black;
+		&::placeholder {
+			color: $black;
+		}
 	}
 }
 
-.popup__close {
-	position: absolute;
-	top: 5px;
-	right: 20px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	color: $green;
-}
-.popup__close:hover {
-	color: $black;
-}
 .button__popup {
+	display: flex;
 	font-size: 1em;
 	padding: 10px;
 	color: #fff;
 	border: 2px solid #06d85f;
-	border-radius: 20px/50px;
+	border-radius: 15px;
+	color: $black;
+	background-color: $dark-gr;
 	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.3s ease-out;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px;
+	font-weight: 500;
 }
-.popup__field {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 20px;
-}
-.popup__input {
-	background-color: #65b890;
-	border: 2px solid $black;
-	padding: 4px 8px;
-	border-radius: 4px;
-}
-.popup__input-container {
-	border: 2px solid $black;
-	border-radius: 4px;
-	color: $black;
-	&::placeholder {
-		color: $black;
-	}
-}
+
 .popup-input {
 	&__menu {
 		background-color: $green !important;
@@ -124,6 +143,10 @@ h1 {
 		&--is-focused {
 			box-shadow: none !important;
 		}
+	}
+	&__placeholder {
+		color: $black !important;
+		opacity: 0.8;
 	}
 }
 .popup__input-container,

@@ -22,7 +22,7 @@ const initialState: TableState = {
 		name: '',
 		gs: 0,
 		clas: '',
-		_id: 0,
+		_id: Object.keys(localStorage).length || 0,
 	},
 };
 
@@ -39,7 +39,6 @@ export const tableSlicer = createSlice({
 			state.char.name = name;
 			state.char.clas = clas;
 			state.char._id++;
-			console.log(state.char._id);
 		},
 	},
 });

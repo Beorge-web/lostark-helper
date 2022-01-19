@@ -8,6 +8,9 @@
 	height: 48px;
 	align-items: center;
 	color: $black;
-    border-bottom: 4px solid $green;
-	font-size: 18px;
+	border-bottom: 4px solid $green;
+	font-size: 25px;
+	&__logo {
+		font-weight: 600;
+	}
 }
