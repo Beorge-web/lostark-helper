@@ -3,9 +3,7 @@
 }
 .button__popup {
 	display: flex;
-	font-size: 1em;
 	padding: 10px;
-	color: #fff;
 	border: 3px solid $black;
 	border-radius: 15px;
 	color: $black;
@@ -18,4 +16,9 @@
 	margin-right: auto;
 	font-size: 18px;
 	font-weight: 600;
+	min-width: 100px;
+	justify-content: center;
+	&:hover{
+		opacity: 0.8;
+	}
 }

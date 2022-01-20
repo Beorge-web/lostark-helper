@@ -31,7 +31,12 @@ const Popup: React.FC = () => {
 		if (typeof name === 'string' && typeof value === 'string') setForm({ ...form, [name]: value });
 	};
 	return (
-		<div id='popup' className={popupOverlay}>
+		<div
+			id='popup'
+			className={popupOverlay}
+			onClick={(e) => {
+				if (e.currentTarget === e.target) dispatch(charPopup(false));
+			}}>
 			<form className='popup' onSubmit={handleSubmit}>
 				<h2 className='popup__title'>Добавить персонажа</h2>
 				<button
