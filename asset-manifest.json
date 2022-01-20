@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lostark-helper/static/css/main.3f66bd81.css",
-    "main.js": "/lostark-helper/static/js/main.c4365289.js",
+    "main.css": "/lostark-helper/static/css/main.12696413.css",
+    "main.js": "/lostark-helper/static/js/main.39e73ec7.js",
     "static/media/FuturaPT-Light.woff": "/lostark-helper/static/media/FuturaPT-Light.bcdac18d371a99c86ee4.woff",
     "static/media/FuturaPT-Medium.woff": "/lostark-helper/static/media/FuturaPT-Medium.c8b92be03320c21491ce.woff",
     "static/media/FuturaPT-Book.woff": "/lostark-helper/static/media/FuturaPT-Book.4b3409651ccb2875bac1.woff",
@@ -12,11 +12,11 @@
     "static/media/clown.png": "/lostark-helper/static/media/clown.1a47a8269c9a92d32d41.png",
     "static/media/avr.png": "/lostark-helper/static/media/avr.eae4990914047891c202.png",
     "index.html": "/lostark-helper/index.html",
-    "main.3f66bd81.css.map": "/lostark-helper/static/css/main.3f66bd81.css.map",
-    "main.c4365289.js.map": "/lostark-helper/static/js/main.c4365289.js.map"
+    "main.12696413.css.map": "/lostark-helper/static/css/main.12696413.css.map",
+    "main.39e73ec7.js.map": "/lostark-helper/static/js/main.39e73ec7.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f66bd81.css",
-    "static/js/main.c4365289.js"
+    "static/css/main.12696413.css",
+    "static/js/main.39e73ec7.js"
   ]
 }
