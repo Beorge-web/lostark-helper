@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useAppDispatch } from '../../redux/hooks';
+import { deletePopup } from '../../redux/popupSlicer';
 import { options } from '../../vendor/data';
+import { ICheckbox } from '../../vendor/types';
 interface CharProps {
 	name?: string;
 	id?: number;
@@ -7,18 +10,9 @@ interface CharProps {
 	clas?: string;
 	completed?: ICheckbox;
 }
-interface ICheckbox {
-	chaos: boolean;
-	guards: boolean;
-	daily: boolean;
-	w_guards: boolean;
-	argos: boolean;
-	boldan: boolean;
-	bela: boolean;
-	clown: boolean;
-	avr: boolean;
-}
+
 const Char: React.FC<CharProps> = ({ name, gs, clas, id, completed }) => {
+	const dispatch = useAppDispatch();
 	const [isChecked, setChecked] = useState<ICheckbox>({
 		chaos: false,
 		guards: false,
@@ -34,7 +28,7 @@ const Char: React.FC<CharProps> = ({ name, gs, clas, id, completed }) => {
 	const char_avatar: string = char_icon[0].img;
 	useEffect(() => {
 		setChecked(completed || isChecked);
-	}, []);
+	}, [completed]);
 	useEffect(() => {
 		const currentChar = {
 			name,
@@ -56,7 +50,14 @@ const Char: React.FC<CharProps> = ({ name, gs, clas, id, completed }) => {
 	return (
 		<div className='todo__char'>
 			<div className='todo__char-info'>
-				<img src={char_avatar || ''} alt='Char' className='todo__char-icon' />
+				<button
+					type='button'
+					className='todo__char-delete'
+					title='Удалить персонажа'
+					onClick={() => {
+						dispatch(deletePopup(name!));
+					}}></button>
+				<img src={char_avatar || ''} alt='Char' className='todo__char-icon' title={clas} />
 				<div className='todo__char-more'>
 					<p className='todo__char-name'>{name}</p>
 					<p className='todo__char-gs'>{gs}</p>

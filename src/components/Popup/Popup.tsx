@@ -8,10 +8,7 @@ import { AppDispatch } from '../../redux/store';
 
 const Popup: React.FC = () => {
 	const [form, setForm] = useState({ name: '', clas: '', gs: 0 });
-	const isValid = () => {
-		console.log(form);
-		return form.name !== '' && form.clas !== '' && form.gs > 0;
-	};
+	const isValid = () => form.name !== '' && form.clas !== '' && form.gs > 0;
 
 	const dispatch: AppDispatch = useAppDispatch();
 	const popupState: boolean = useAppSelector((state) => state.popup.addCharPopup);

@@ -140,11 +140,26 @@
 		font-size: 14px;
 		font-weight: 500;
 	}
+	&-delete {
+		border: none;
+		background-color: transparent;
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(../../images/delete-icon.png);
+		margin-left: 5px;
+		padding: 10px;
+		&:hover {
+			background-color: red;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
 }
 .todo__char-info {
 	display: flex;
 	width: 200px;
-	justify-content: space-evenly;
 	align-items: center;
 	box-sizing: border-box;
 }
@@ -167,4 +182,6 @@
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	margin-left: auto;
+	width: 50%;
 }

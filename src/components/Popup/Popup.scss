@@ -16,20 +16,6 @@ h1 {
 	text-align: center;
 }
 
-.button {
-	font-size: 1em;
-	padding: 10px;
-	color: #fff;
-	border: 2px solid #06d85f;
-	border-radius: 20px/50px;
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 0.3s ease-out;
-}
-.button:hover {
-	background: #06d85f;
-}
-
 .popup__overlay {
 	display: none;
 	position: fixed;
@@ -107,25 +93,10 @@ h1 {
 			color: $black;
 		}
 	}
-}
-
-.button__popup {
-	display: flex;
-	font-size: 1em;
-	padding: 10px;
-	color: #fff;
-	border: 2px solid #06d85f;
-	border-radius: 15px;
-	color: $black;
-	background-color: $dark-gr;
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 0.3s ease-out;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 18px;
-	font-weight: 500;
+	&_delete {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .popup-input {

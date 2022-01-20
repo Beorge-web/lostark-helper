@@ -1,7 +1,8 @@
 import DailyTable from '../DailyTable/DailyTable';
 import Popup from '../Popup/Popup';
-import PopupButton from '../PopupButton/PopupButton';
-import TableForm from '../TableForm/TableForm';
+
+import Buttons from '../Buttons/Buttons';
+import DeletePopup from '../DeletePopup/DeletePopup';
 
 const Main: React.FC = () => {
 	return (
@@ -9,7 +10,8 @@ const Main: React.FC = () => {
 			{/* <TableForm /> */}
 			<DailyTable />
 			<Popup />
-			<PopupButton />
+			<DeletePopup />
+			<Buttons />
 		</>
 	);
 };
