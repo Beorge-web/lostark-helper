@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lostark-helper/static/css/main.f773b88f.css",
-    "main.js": "/lostark-helper/static/js/main.f6bfef07.js",
+    "main.js": "/lostark-helper/static/js/main.d410eb58.js",
     "static/media/FuturaPT-Light.woff": "/lostark-helper/static/media/FuturaPT-Light.bcdac18d371a99c86ee4.woff",
     "static/media/FuturaPT-Medium.woff": "/lostark-helper/static/media/FuturaPT-Medium.c8b92be03320c21491ce.woff",
     "static/media/FuturaPT-Book.woff": "/lostark-helper/static/media/FuturaPT-Book.4b3409651ccb2875bac1.woff",
@@ -13,10 +13,10 @@
     "static/media/avr.png": "/lostark-helper/static/media/avr.eae4990914047891c202.png",
     "index.html": "/lostark-helper/index.html",
     "main.f773b88f.css.map": "/lostark-helper/static/css/main.f773b88f.css.map",
-    "main.f6bfef07.js.map": "/lostark-helper/static/js/main.f6bfef07.js.map"
+    "main.d410eb58.js.map": "/lostark-helper/static/js/main.d410eb58.js.map"
   },
   "entrypoints": [
     "static/css/main.f773b88f.css",
-    "static/js/main.f6bfef07.js"
+    "static/js/main.d410eb58.js"
   ]
 }
