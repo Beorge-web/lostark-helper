@@ -9,7 +9,7 @@ import destr_icon from '../images/destr-icon.png';
 import dual_icon from '../images/dual-icon.png';
 import dh_icon from '../images/dh-icon.png';
 import guns_icon from '../images/guns-icon.png';
-
+import lance_icon from '../images/lance-icon.png';
 import furi_icon from '../images/furi-icon.png';
 import pal_icon from '../images/pal-icon.png';
 import gunner_icon from '../images/gunner-icon.png';
@@ -20,7 +20,6 @@ import sorc_icon from '../images/sorc-icon.png';
 import taig_icon from '../images/taig-icon.png';
 import wl_icon from '../images/wl-icon.png';
 import sum_icon from '../images/sum-icon.png';
-
 
 export interface Option {
 	value: string;
@@ -34,6 +33,7 @@ export const options: Option[] = [
 	{ value: 'бард', label: 'Бард', img: bard_icon },
 	{ value: 'берсерк', label: 'Берсерк', img: bers_icon },
 	{ value: 'клинок', label: 'Клинок', img: blade_icon },
+	{ value: 'копье', label: 'Копье', img: lance_icon },
 	{ value: 'сокрушитель', label: 'Сокрушитель', img: destr_icon },
 	{ value: 'дх', label: 'ДХ', img: dh_icon },
 	{ value: 'gunslinger', label: 'Gunslinger', img: guns_icon },
